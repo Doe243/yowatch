@@ -1,0 +1,133 @@
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+  .section-header{
+      text-align: center;
+      margin-bottom: 36px;
+      margin-top: 15px;
+  }
+
+  .section-header p {
+      font-size: 18px;
+  }
+
+  .single-service {
+      border: 1px solid #ebebeb;
+      text-align: center;
+      background: #fff;
+  }
+
+  .service-bg {
+      height: 200px;
+      position: relative;
+  }
+
+  .service-bg-1 {
+      background: url(https://images-na.ssl-images-amazon.com/images/I/71ZMcaOEswL._SX466_.jpg);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center; 
+  }
+
+  .service-bg-2 {
+    background: url(https://image1.pricedekho.com/p/2101/2/52/1989252/5599777-accore-sport-gear-smartwatch-white-skupdcmx1r-picture-large.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center; 
+}
+
+.service-bg-3 {
+    background: url(https://cdn.shopify.com/s/files/1/1247/4471/products/4_1024x1024.jpg?v=1527243682);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center; 
+}
+
+.service-bg h2 {
+    color: #fff;
+    background: tomato;
+    border: 1px solid tomato;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 700;
+    padding: 15px;
+    position: absolute;
+    left: 8%;
+    width: 84%;
+    margin: 0;
+    bottom: -25px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+.single-service:hover .service-bg h2 {
+    background: #fff;
+    transition: 0.9s;
+    color: tomato
+}
+
+.service-text {
+    padding: 50px 30px 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.service-text p:last-child{
+    margin: 0;
+    line-height: 1.8;
+}
+
+.btn-area {
+    display: inline-block;
+    color: #333;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
